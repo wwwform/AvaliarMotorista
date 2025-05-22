@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Avaliação do Motorista</title>
+  <link rel="stylesheet" href="styles.css"/>
+</head>
+<body>
+  <div class="container">
+    <h1>Avalie seu motorista</h1>
+
+    <div class="driver-card">
+      <img src="motorista.jpg" alt="Foto do Motorista" class="driver-photo">
+      <h2 id="driverName">João da Silva</h2>
+    </div>
+
+    <form id="reviewForm">
+      <label for="passengerName">Seu nome:</label>
+      <input type="text" id="passengerName" required>
+
+      <label for="date">Data:</label>
+      <input type="date" id="date" required>
+
+      <label>Avaliação:</label>
+      <div class="stars" id="starContainer">
+        <span class="star" data-value="1">★</span>
+        <span class="star" data-value="2">★</span>
+        <span class="star" data-value="3">★</span>
+        <span class="star" data-value="4">★</span>
+        <span class="star" data-value="5">★</span>
+      </div>
+
+      <label for="feedback">Feedback:</label>
+      <textarea id="feedback" rows="4" placeholder="Escreva aqui..."></textarea>
+
+      <button type="submit">Enviar avaliação</button>
+    </form>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
