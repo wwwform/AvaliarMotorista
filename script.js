@@ -33,7 +33,7 @@ document.getElementById("reviewForm").addEventListener("submit", function (e) {
 ⭐ Avaliação: ${selectedStars} estrela(s)%0A
 📝 Feedback: ${feedback || "Nenhum"}%0A`;
 
-  const phone = "5511999999999"; // Substitua pelo número do motorista (com DDD e sem espaços)
+  const phone = "5527992340625"; // Substitua pelo número do motorista (com DDD e sem espaços)
   const url = `https://wa.me/${phone}?text=${encodeURI(message)}`;
 
   window.open(url, "_blank");
